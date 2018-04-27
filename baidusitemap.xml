@@ -4,21 +4,21 @@
 
     
   <url>
-    <loc>http://www.wangbin26.com/2017/05/20/%E5%96%84%E8%89%AF%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8/</loc>
-    <lastmod>2018-04-26T09:21:39.112Z</lastmod>
+    <loc>http://www.wangbin26.com/2016/07/05/ES6%20class%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2018-04-26T14:43:50.849Z</lastmod>
     <data>
         <display>
-        <title>善良有什么用</title>
-        <pubTime>2017-05-20T08:47:31.000Z</pubTime>
+        <title>ES6 class的基本语法</title>
+        <pubTime>2016-07-05T14:58:23.000Z</pubTime>
         
-        <tag>生活</tag>
+        <tag>ECMAScript6</tag>
          
-        <tag>散文</tag>
+        <tag>class关键字</tag>
          
          
            
              
-              <breadCrumb title="文学" url="http://www.wangbin26.com/categories/%E6%96%87%E5%AD%A6/"/>
+              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -26,11 +26,11 @@
 
     
   <url>
-    <loc>http://www.wangbin26.com/2016/07/10/class%E7%9A%84%E7%BB%A7%E6%89%BF/</loc>
-    <lastmod>2018-04-26T09:14:30.932Z</lastmod>
+    <loc>http://www.wangbin26.com/2016/07/10/ES6%20class%E7%9A%84%E7%BB%A7%E6%89%BF/</loc>
+    <lastmod>2018-04-26T14:43:26.971Z</lastmod>
     <data>
         <display>
-        <title>class的继承</title>
+        <title>ES6 class的继承</title>
         <pubTime>2016-07-10T08:58:44.000Z</pubTime>
         
         <tag>ECMAScript6</tag>
@@ -48,16 +48,60 @@
 
     
   <url>
-    <loc>http://www.wangbin26.com/2016/07/05/class%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2018-04-26T09:01:58.061Z</lastmod>
+    <loc>http://www.wangbin26.com/2016/08/16/js%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2018-04-26T14:41:39.095Z</lastmod>
     <data>
         <display>
-        <title>class的基本语法</title>
-        <pubTime>2016-07-05T14:58:23.000Z</pubTime>
+        <title>js基础理论知识</title>
+        <pubTime>2016-08-16T13:05:26.000Z</pubTime>
+        
+        <tag>js基础理论知识</tag>
+         
+        <tag>js</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.wangbin26.com/2016/06/12/canvas%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-04-26T12:51:56.592Z</lastmod>
+    <data>
+        <display>
+        <title>canvas基础笔记</title>
+        <pubTime>2016-06-12T02:09:38.000Z</pubTime>
+        
+        <tag>canvas</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.wangbin26.com/2016/06/05/ECMAScript6%E7%9A%84let%E5%92%8Cconst%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2018-04-26T12:40:26.179Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript6的let和const命令</title>
+        <pubTime>2016-06-05T06:43:11.000Z</pubTime>
         
         <tag>ECMAScript6</tag>
          
-        <tag>class关键字</tag>
+        <tag>let</tag>
+         
+        <tag>const</tag>
          
          
            
@@ -91,28 +135,6 @@
     </url>
 
     
-  <url>
-    <loc>http://www.wangbin26.com/2017/06/02/%E8%A5%BF%E7%93%9C%E5%91%B3%E5%A5%B3%E5%AD%A9/</loc>
-    <lastmod>2018-04-26T06:28:25.227Z</lastmod>
-    <data>
-        <display>
-        <title>西瓜味女孩</title>
-        <pubTime>2017-06-02T08:10:34.000Z</pubTime>
-        
-        <tag>生活</tag>
-         
-        <tag>散文</tag>
-         
-         
-           
-             
-              <breadCrumb title="文学" url="http://www.wangbin26.com/categories/%E6%96%87%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
   <url>
@@ -126,26 +148,6 @@
         <tag>canvas</tag>
          
         <tag>konva</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/12/canvas%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2018-04-25T15:36:27.075Z</lastmod>
-    <data>
-        <display>
-        <title>canvas基础笔记</title>
-        <pubTime>2016-06-12T02:09:38.000Z</pubTime>
-        
-        <tag>canvas</tag>
          
          
            
@@ -240,30 +242,6 @@
     
     
     
-    
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/05/ECMAScript6%E7%9A%84let%E5%92%8Cconst%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2018-04-25T12:01:55.044Z</lastmod>
-    <data>
-        <display>
-        <title>ECMAScript6的let和const命令</title>
-        <pubTime>2016-06-05T06:43:11.000Z</pubTime>
-        
-        <tag>ECMAScript6</tag>
-         
-        <tag>let</tag>
-         
-        <tag>const</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.wangbin26.com/2016/06/22/ECMAScript6%E7%BC%96%E7%A8%8B%E9%A3%8E%E6%A0%BC/</loc>
