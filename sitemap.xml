@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.wangbin26.com/2016/07/05/ES6%20class%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    <loc>http://www.wangbin26.com/2016/04/25/CSS3%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2018-04-26T14:43:50.849Z</lastmod>
+    <lastmod>2018-04-28T03:54:16.017Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wangbin26.com/2016/06/12/canvas%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2018-04-27T08:54:47.387Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wangbin26.com/2017/04/24/%E4%BD%A0%E7%9A%84%E7%94%9F%E5%91%BD%E9%87%8C%E4%BD%8F%E7%9D%80%E6%80%8E%E6%A0%B7%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1/</loc>
+    
+    <lastmod>2018-04-27T08:24:21.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wangbin26.com/2016/06/05/ECMAScript6%E7%9A%84let%E5%92%8Cconst%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2018-04-27T07:54:26.289Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.wangbin26.com/2016/07/10/ES6%20class%E7%9A%84%E7%BB%A7%E6%89%BF/</loc>
     
-    <lastmod>2018-04-26T14:43:26.971Z</lastmod>
+    <lastmod>2018-04-27T07:53:14.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wangbin26.com/2016/07/05/ES6%20class%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</loc>
+    
+    <lastmod>2018-04-27T07:53:08.042Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wangbin26.com/2016/06/22/ECMAScript6%E7%BC%96%E7%A8%8B%E9%A3%8E%E6%A0%BC/</loc>
+    
+    <lastmod>2018-04-27T07:53:00.495Z</lastmod>
     
   </url>
   
@@ -19,27 +54,6 @@
     <loc>http://www.wangbin26.com/2016/08/16/js%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</loc>
     
     <lastmod>2018-04-26T14:41:39.095Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/12/canvas%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2018-04-26T12:51:56.592Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/05/ECMAScript6%E7%9A%84let%E5%92%8Cconst%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2018-04-26T12:40:26.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wangbin26.com/2017/04/24/%E4%BD%A0%E7%9A%84%E7%94%9F%E5%91%BD%E9%87%8C%E4%BD%8F%E7%9D%80%E6%80%8E%E6%A0%B7%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1/</loc>
-    
-    <lastmod>2018-04-26T08:15:05.622Z</lastmod>
     
   </url>
   
@@ -61,13 +75,6 @@
     <loc>http://www.wangbin26.com/2016/06/27/Konva%E8%8A%82%E9%80%89/</loc>
     
     <lastmod>2018-04-25T15:37:17.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wangbin26.com/2016/04/25/CSS3%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2018-04-25T15:36:21.914Z</lastmod>
     
   </url>
   
@@ -117,13 +124,6 @@
     <loc>http://www.wangbin26.com/schedule/index.html</loc>
     
     <lastmod>2018-04-25T15:16:52.933Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/22/ECMAScript6%E7%BC%96%E7%A8%8B%E9%A3%8E%E6%A0%BC/</loc>
-    
-    <lastmod>2018-04-25T07:03:28.408Z</lastmod>
     
   </url>
   
