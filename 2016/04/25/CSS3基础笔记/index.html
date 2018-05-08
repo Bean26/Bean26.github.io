@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "7fb41708"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+
+
+
+
+
+  <meta name="keywords" content="CSS3," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Bean的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="第1章CSS3简介如同人类的的进化一样，CSS3是CSS2的“进化”版本，在CSS2基础上，增强或新增了许多特性， 弥补了CSS2的众多不足之处，使得Web开发变得更为高效和便捷。 1.1 CSS3的现状1、浏览器支持程度差，需要添加私有前缀 2、移动端支持优于PC端 3、不断改进中 4、应用相对广泛 1.2 如何对待1、坚持渐进增强原则 2、考虑用户群体 3、遵照产品的方案 4、听Boss的 第">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3基础笔记">
+<meta property="og:url" content="http://www.wangbin26.com/2016/04/25/CSS3基础笔记/index.html">
+<meta property="og:site_name" content="Bean的博客">
+<meta property="og:description" content="第1章CSS3简介如同人类的的进化一样，CSS3是CSS2的“进化”版本，在CSS2基础上，增强或新增了许多特性， 弥补了CSS2的众多不足之处，使得Web开发变得更为高效和便捷。 1.1 CSS3的现状1、浏览器支持程度差，需要添加私有前缀 2、移动端支持优于PC端 3、不断改进中 4、应用相对广泛 1.2 如何对待1、坚持渐进增强原则 2、考虑用户群体 3、遵照产品的方案 4、听Boss的 第">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-28T03:57:33.936Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3基础笔记">
+<meta name="twitter:description" content="第1章CSS3简介如同人类的的进化一样，CSS3是CSS2的“进化”版本，在CSS2基础上，增强或新增了许多特性， 弥补了CSS2的众多不足之处，使得Web开发变得更为高效和便捷。 1.1 CSS3的现状1、浏览器支持程度差，需要添加私有前缀 2、移动端支持优于PC端 3、不断改进中 4、应用相对广泛 1.2 如何对待1、坚持渐进增强原则 2、考虑用户群体 3、遵照产品的方案 4、听Boss的 第">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.wangbin26.com/2016/04/25/CSS3基础笔记/"/>
+
+
+
+
+
+  <title>CSS3基础笔记 | Bean的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?154ac9401eaac30ed7862fa11b2048f9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/Bean26/Bean26.github.io" target="_black">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" 
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+      </a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Bean的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">命之沧桑，唯有破风前行！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.wangbin26.com/2016/04/25/CSS3基础笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://img1.2345.com/duoteimg/qqTxImg/2013/12/ns/29-020632_476.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bean的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS3基础笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-25T20:38:52+02:00">
+                2016-04-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端技术/" itemprop="url" rel="index">
+                    <span itemprop="name">前端技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4,307
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="第1章CSS3简介"><a href="#第1章CSS3简介" class="headerlink" title="第1章CSS3简介"></a>第1章CSS3简介</h1><p>如同人类的的进化一样，CSS3是CSS2的“进化”版本，在CSS2基础上，增强或新增了许多特性， 弥补了CSS2的众多不足之处，使得Web开发变得更为高效和便捷。</p>
+<h2 id="1-1-CSS3的现状"><a href="#1-1-CSS3的现状" class="headerlink" title="1.1 CSS3的现状"></a>1.1 CSS3的现状</h2><pre><code>1、浏览器支持程度差，需要添加私有前缀
+2、移动端支持优于PC端
+3、不断改进中
+4、应用相对广泛
+</code></pre><h2 id="1-2-如何对待"><a href="#1-2-如何对待" class="headerlink" title="1.2 如何对待"></a>1.2 如何对待</h2><pre><code>1、坚持渐进增强原则
+2、考虑用户群体
+3、遵照产品的方案
+4、听Boss的
+</code></pre><h1 id="第2章准备工作"><a href="#第2章准备工作" class="headerlink" title="第2章准备工作"></a>第2章准备工作</h1><h2 id="2-1统一环境"><a href="#2-1统一环境" class="headerlink" title="2.1统一环境"></a>2.1统一环境</h2><p>由于CSS3兼容性问题的普遍存在，为了避免因兼容性带来的干扰，我们约定统一的环境，以保证学习的效率，在最后会单独说明兼容性的问题。<br>    1、Chrome浏览器 version 46+<br>    2、Firefox浏览器 firefox 42+<br>    3、PhotoShop CS6（建议）</p>
+<h2 id="2-2如何使用手册"><a href="#2-2如何使用手册" class="headerlink" title="2.2如何使用手册"></a>2.2如何使用手册</h2><p>学会使用工具，可以让我们事半功倍。<br>[]        表示全部可选项<br>||        表示或者<br>|        表示多选一<br>？    表示0个或者1个<br>*        表示0个或者多个<br>{}        表示范围</p>
+<h1 id="第3章基础知识"><a href="#第3章基础知识" class="headerlink" title="第3章基础知识"></a>第3章基础知识</h1><h2 id="3-1选择器"><a href="#3-1选择器" class="headerlink" title="3.1选择器"></a>3.1选择器</h2><p>CSS3新增了许多灵活查找元素的方法，极大的提高了查找元素的效率和精准度。CSS3选择器与jQuery中所提供的绝大部分选择器兼容。</p>
+<h3 id="3-1-1属性选择器"><a href="#3-1-1属性选择器" class="headerlink" title="3.1.1属性选择器"></a>3.1.1属性选择器</h3><p>参考手册<br>1、E[attr] 表示存在attr属性即可；<br>2、E[attr=val] 表示属性值完全等于val<br>3、E[attr~=val] 表示的一个单独的属性值 这个属性值是以空格分隔的<br>4、E[attr|=val] 表示的要么一个单独的属性值 要么这个属性值是以“-”分隔的<br>5、E[attr*=val] 表示的属性值里包含val字符并且在“任意”位置<br>6、E[attr^=val] 表示的属性值里包含val字符并且在“开始”位置<br>7、E[attr$=val] 表示的属性值里包含val字符并且在“结束”位置</p>
+<h3 id="3-1-2伪类选择器"><a href="#3-1-2伪类选择器" class="headerlink" title="3.1.2伪类选择器"></a>3.1.2伪类选择器</h3><p>参考手册<br>重点理解E是用来参考确定其父元素的，nth-child(n) 对应根据E元素确定的父元素的所有子元素，nth-of-type(n) 的不同之处在于其对应的是只有E元素，会忽略其子元素。（此处要配合案例加强理解）<br>E:nth-child(n) 第n个子元素，计算方法是E元素的全部兄弟元素<br>E:nth-of-type(n) 第n个子元素，计算方法只是E元素，会忽略其子元素的<br>存在<br>E:nth-last-child(n) 同E:nth-child(n) 计算顺序相反。<br>E:nth-last-of-type(n) 同E:nth-of-type(n) 计算顺序相反。<br>n遵循线性变化，其取值1、2、3、4、…<br>关于n的取值范围：<br>1、当n做为一个独立值时，n取值为n&gt;=1，例如nth-child(n)<br>2、当n做一个系数时，n取值为n&gt;=0者n&lt;0，例如nth-child(2n+1)、nth-child(-1n+5) 此处需要理解2n+1或者-n+5做为一个整体不能小于1；<br>E:only-child 表示当前以E确定的父元素，除E之外并无其它子元素（独生子）；<br>E:only-of-type表示当前以E确定的父元素， 除E之外不能包含其它和E同类型的子元素；<br>E:target 结合锚点进行使用，处于当前锚点的元素会被选中；<br>E:empty 选中没有任何子节点的E元素；</p>
+<p>###3.1.3伪元素选择器<br>E::selection 可改变选中文本的样式<br>E::placeholder 可改变placeholder默认样式，这个存在明显的兼容问题，比如::-webkit-input-placeholder，具体参考手册进行对比。<br>E:after、E:before 在旧版本里是伪类，在新版本里是伪元素，新版本下E:after、E:before会被自动识别为E::after、E::before，按伪元素来对待。<br>“:” 与 “::” 区别在于区分伪类和伪元素</p>
+<h2 id="3-2颜色"><a href="#3-2颜色" class="headerlink" title="3.2颜色"></a>3.2颜色</h2><p>新增了RGBA、HSLA模式，其中的A 表示透明度通道，即可以设置颜色值的透明度，相较opacity，不具有继承性，即不会影响子元素的透明度。<br>Red、Green、Blue、Alpha即RGBA<br>Hue、Saturation、Lightness、Alpha即HSLA<br>R、G、B 取值范围0~255<br>H 取值范围0~360，0/360表示黑色、120表示绿色、240表示蓝色<br>S 取值范围0%~100%<br>L 取值范围0%~100%<br>A 取值范围0~1<br>关于透明度：<br>1、opacity子元素会继承父元素的透明度，在实际开发中会带来干扰；<br>2 、transparent 设置透明度时完全类似于“玻璃”一样的透明；</p>
+<h2 id="3-3文本"><a href="#3-3文本" class="headerlink" title="3.3文本"></a>3.3文本</h2><p>参考手册<br>文字阴影与边框阴影相似，可分别设置偏移量、模糊度、颜色（可设透明度）。<br>单行文本溢出，需要配合overflow:hidden; white-space: nowrap;<br>难理解的点：<br>自已要多试着理解一下关于white-space的各个属性值之间的差异；<br>换行符指的我们在键盘上的Enter键，Enter换行符会被当成空行来对待，而由Tab、Space产生的换行，则会视为一个空格。<br>上述方法只能解决单行文本的溢出问题，多行文本溢出处理可参照下面的方法，但是有比较严重的兼容性，需要慎重选择，比较完备的多行溢出需要JS辅助完成，可自行尝试。<br>多行文本文字溢出处理，非标准属性，可应用于移动端</p>
+<p>了解常握white-space 使用</p>
+<h2 id="3-4边框"><a href="#3-4边框" class="headerlink" title="3.4边框"></a>3.4边框</h2><p>其边框圆角、边框阴影属性，应用十分广泛，兼容性也相对较好，具有符合渐进增强原则的特征，我们需要重点掌握。</p>
+<h3 id="3-4-1边框圆角"><a href="#3-4-1边框圆角" class="headerlink" title="3.4.1边框圆角"></a>3.4.1边框圆角</h3><p>圆角处理时，脑中要形成圆、圆心、长半径、短半径的概念，正圆是椭圆的一种特殊情况。</p>
+<p>可分别设置长、短半径，以“/”进行分隔，遵循“1，2，3，4”规则，“/”前面的1~4个用来设置横轴半径（分别对应横轴1、2、3、4位置 ），“/”后面1~4个参数用来设置纵轴半径（分别对应纵轴1、2、3、4位置 ）<br>参考手册练习熟悉各种简写方式。</p>
+<p>表格运用圆角需要要 border-collapse: separate;<br>当圆角半径小于或等于边框宽度时，元素内角是直角</p>
+<p>如何在PS中查看圆角半径？</p>
+<h3 id="3-4-2边框图片"><a href="#3-4-2边框图片" class="headerlink" title="3.4.2边框图片"></a>3.4.2边框图片</h3><p>设置的图片将会被“切割”成九宫格形式，然后进行设置。如下图</p>
+<p>“切割”完成后生成虚拟的9块图形，然后按对应位置设置背景，<br>其中四个角位置、形状保持不变，中心位置水平垂直两个方向平铺。如下图</p>
+<p>round 会自动调整尺寸，完整显示边框图片。</p>
+<p>repeat 单纯平铺多余部分，会被“裁切”而不显示。</p>
+<p>background-slice: 27 40 40 27 分别设置裁切如下图</p>
+<h3 id="3-4-3边框阴影"><a href="#3-4-3边框阴影" class="headerlink" title="3.4.3边框阴影"></a>3.4.3边框阴影</h3><p>水平偏移量 正值向右 负值向左 垂直正值向下 负值向上。<br>模糊度是不能为负<br>关于模糊度：从一个颜色值在一定距离内进行一个渐变至透明的过程。<br>移量和扩展也是数学运算的，即正负会相互抵消。<br>偏移量和模糊度是可以相加计算，偏移量负号只代表方向。<br>设置边框阴影不会影响盒子的布局，即不会影响其兄弟元素的布局。<br>spread可以与blur、h-shadow、v-shadow相互抵消，blur不可为负值<br>可以设置多重边框阴影，实现更好的效果，增强立体感。</p>
+<h2 id="3-5盒模型"><a href="#3-5盒模型" class="headerlink" title="3.5盒模型"></a>3.5盒模型</h2><p>关于盒模型存在两种形式，分别是W3C标准盒模型和IE盒模型，如下图所示，其区别主要在于宽度和高度的计算方式，CSS3对盒模型做出了新的定义，即允许开发人员指定盒子宽度和高度的计算方式。</p>
+<p>IE模型下 width = padding + content + border;<br>W3C盒模型下 width = content<br>box-sizing: border-box  width = border + padding + content<br>box-sizing: content-box  width = content<br>IE盒模型只会出现在IE5版本和IE6+的怪异模式中。<br>怪异模式<br><a href="http://www.cnblogs.com/coco1s/p/4034937.html" target="_blank" rel="noopener">http://www.cnblogs.com/coco1s/p/4034937.html</a><br>CSS3中可以通过box-sizing 来指定盒模型，即可指定为content-box、border-box;</p>
+<h2 id="3-6背景"><a href="#3-6背景" class="headerlink" title="3.6背景"></a>3.6背景</h2><p>背景在CSS3中也得到很大程度的增强，比如背景图片尺寸、背景裁切区域、背景定位参照点、多重背景等。<br>cover 会使“最大”边，进行缩放，另一边同比缩放，铺满容器，超出部分会溢出。<br>contain 会使“最小”边，进行缩放，另一边同比缩放，不一定铺满容器，会完整显示图片。<br>background-size 与 background-clip无关<br>background-size 与 background-origin 保持一致<br>背景图片尺寸在实际开发中应用十分广泛。<br>参照手册</p>
+<h2 id="3-7渐变"><a href="#3-7渐变" class="headerlink" title="3.7渐变"></a>3.7渐变</h2><p>渐变是CSS3当中比较丰富多彩的一个特性，通过渐变我们可以实现许多炫丽的效果，有效的减少图片的使用数量，并且具有很强的适应性和可扩展性。<br>可分为线性渐变、径向渐变、重复渐变。<br>线性渐变指沿着某条直线朝一个方向产生渐变效果。</p>
+<p>上图是从黄色渐变到绿色<br>必要的元素：方向、起始颜色、终止色；<br>关于方向如下图</p>
+<p>关于颜色起止，可以设置多个色值的渐变，并且可以分别设置渐变的距离<br>如 linear-gradient(to left, yellow 10%, blue 15%, red 50%)<br>径向渐变指从一个中心点开始沿着四周产生渐变效果</p>
+<p>特点：<br>1、辐射范围<br>2、中心点<br>3、颜色的起止<br>关于中心点：中心位置参照的是盒子的左上角<br>关于辐射范围：其半径可以不等即可以是椭圆<br>关于圆的知识同边框圆角章节的介绍</p>
+<h2 id="3-8伸缩布局"><a href="#3-8伸缩布局" class="headerlink" title="3.8伸缩布局"></a>3.8伸缩布局</h2><p>CSS3在布局方面做了非常大的改进，使得我们对块级元素的布局排列变得十分灵活，适应性非常强，其强大的伸缩性，在响应式开中可以发挥极大的作用，使得开发人员一下子就过上了小康的生活。<br>伸缩盒模型经历了几次演变，大致分为旧版伸缩布局、过渡伸缩布局、新版伸缩布局，同样为了避免混淆，我们以学习新版伸缩布局为主。</p>
+<h2 id="3-8-1新版伸缩布局"><a href="#3-8-1新版伸缩布局" class="headerlink" title="3.8.1新版伸缩布局"></a>3.8.1新版伸缩布局</h2><p>这里我们需要引入一些新的概念：<br>主轴：Flex容器的主轴主要用来配置Flex项目。<br>侧轴：与主轴垂直的轴称作侧轴，是侧轴方向的延伸。<br>主轴和侧轴并不是固定不变的，通过flex-direction可以调整。</p>
+<p>1、指定一个盒子为伸缩盒子 display: flex<br>2、设置属性来调整此盒的子元素的布局方式 例如 flex-direction<br>3、明确主侧轴的方向<br>4、可互换主侧轴，也可改变方向<br>其相关属性可参照源代码里的解释如flex-direction、flex-wrap、flex-flow、align-items、align-content、justify-content、align-self、flex、order等<br>另个两个版本伸缩布局其实现思路与新版基本一致，区别在于其属性及属性值不同，熟练掌握新版伸缩布局后，要参照对比另外两个版本的不同。</p>
+<h2 id="3-9多列布局"><a href="#3-9多列布局" class="headerlink" title="3.9多列布局"></a>3.9多列布局</h2><p>类似报纸或杂志中的排版方式，上要用以控制大篇幅文本。<br>参照手册</p>
+<h2 id="3-10过渡"><a href="#3-10过渡" class="headerlink" title="3.10过渡"></a>3.10过渡</h2><p>过渡是CSS3中具有颠覆性的特征之一，可以实现元素不同状态间的平滑过渡（补间动画），经常用来制作动画效果。<br>帧动画：通过一帧一帧的关键画面按照固定顺序和速度播放。如电影胶片</p>
+<p>补间动画：自动完成从起始状到终止状的的过度。<br>关于补间动画更多学习可查看<a href="http://mux.alimama.com/posts/1009" target="_blank" rel="noopener">http://mux.alimama.com/posts/1009</a><br>特点：当前元素只要有“属性”发生变化时，可以平滑的进行过渡。<br>transition-property设置过渡属性<br>transition-duration设置过渡时间<br>transition-timing-function设置过渡速度<br>transition-delay设置过渡延时<br>贝塞尔曲线限定了过渡的轨迹。这部分没有提及，有兴趣同学自行查阅相关资料了解一下即可。<br>以上四属性重在更解，具体细节可参考手册辅助记忆</p>
+<h2 id="3-11动画"><a href="#3-11动画" class="headerlink" title="3.11动画"></a>3.11动画</h2><p>动画是CSS3中具有颠覆性的特征之一，可通过设置多个节点来精确控制一个或一组动画，常用来实现复杂的动画效果。<br>参考手册</p>
+<h2 id="3-12转换"><a href="#3-12转换" class="headerlink" title="3.12转换"></a>3.12转换</h2><p>转换是CSS3中具有颠覆性的特征之一，可以实现元素的位移、旋转、变形、缩放，甚至支持矩阵方式，配合即将学习的过渡和动画知识，可以取代大量之前只能靠Flash才可以实现的效果。<br>2D 转换<br>translate(x,y)  x、y 可为负值，相对自身移动，并未脱离文档流。<br>左手坐标系：伸出左手，让拇指和食指成“L”形，大拇指向右，食指向上，中指指向前方。这样我们就建立了一个左手坐标系，拇指、食指和中指分别代表X、Y、Z轴的正方向。<br>左手法则：左手握住旋转轴，竖起拇指指向旋转轴正方向，正向旋转方向就是其余手指卷曲的方向。</p>
+<p>3D坐标轴，用X、Y、Z分别表示空间的3个维度，三条轴上互相垂直。</p>
+<h2 id="3-13媒体查询"><a href="#3-13媒体查询" class="headerlink" title="3.13媒体查询"></a>3.13媒体查询</h2><p>由于网页呈现终端设备越来越趋向于多样化，尤其是移动终端（手机），具有不同屏幕尽寸、不同分辨率，为了保证网页能十分友好的呈现，CSS3为开发人员提供了可以识别呈现终端的方法，这样便可以有针对性的为不同的呈现终端分别进行处理，被广泛应用于响应式开发中。<br>html 标签方式：<br>css 属性方式：<br>常使用的是检测设备宽度<br>参考手册<br>第4章Web字体<br>开发人员可以为自已的网页指定特殊的字体，无需考虑用户电脑上是否安装了此特殊字体，从此把特殊字体处理成图片的时代便成为了过去。<br>支持程度比较好，甚至IE低版本浏览器也能支持。</p>
+<h2 id="4-1字体格式"><a href="#4-1字体格式" class="headerlink" title="4.1字体格式"></a>4.1字体格式</h2><p>不同浏览器所支持的字体格式是不一样的，我们有必要了解一下有关字体格式的知识。<br>1、TureTpe(.ttf)格式<br>.ttf字体是Windows和Mac的最常见的字体，是一种RAW格式，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome4+、Safari3+、Opera10+、iOS Mobile、Safari4.2+；<br>2、OpenType(.otf)格式<br>.otf字体被认为是一种原始的字体格式，其内置在TureType的基础上，支持这种字体的浏览器有Firefox3.5+、Chrome4.0+、Safari3.1+、Opera10.0+、iOS Mobile、Safari4.2+；<br>3、Web Open Font Format(.woff)格式<br>woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType的压缩版本，同时也支持元数据包的分离，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome6+、Safari3.6+、Opera11.1+；<br>4、Embedded Open Type(.eot)格式<br>.eot字体是IE专用字体，可以从TrueType创建此格式字体，支持这种字体的浏览器有IE4+；<br>5、SVG(.svg)格式<br>.svg字体是基于SVG字体渲染的一种格式，支持这种字体的浏览器有Chrome4+、Safari3.1+、Opera10.0+、iOS Mobile Safari3.2+；<br>关于字体介绍摘自<a href="http://www.w3cplus.com/content/css3-font-face/" target="_blank" rel="noopener">http://www.w3cplus.com/content/css3-font-face/</a><br>了解了上面的知识后，我们就需要为不同的浏览器准备不同格式的字体，通常我们会通过字体生成工具帮我们生成各种格式的字体，因此无需过于在意字体格式间的区别差异。<br>推荐<a href="http://www.zhaozi.cn/、http://www.youziku.com/" target="_blank" rel="noopener">http://www.zhaozi.cn/、http://www.youziku.com/</a> 查找更多中文字体</p>
+<h2 id="4-2字体图标"><a href="#4-2字体图标" class="headerlink" title="4.2字体图标"></a>4.2字体图标</h2><p>其实我们可以把文字理解成是一种特殊形状的图片，反之我们是不是也可以把图片制作成字体呢？<br>答案是肯定的。<br>常见的是把网页常用的一些小的图标，借助工具帮我们生成一个字体库，然后就可以像使用文字一样使用图标了。<br>优点：<br>1、将所有图标打包成字体库，减少请求；<br>2、具有矢量性，可保证清晰度；<br>3、使用灵活，便于维护；<br>Font Awesome 使用介绍<br><a href="http://fontawesome.dashgame.com/" target="_blank" rel="noopener">http://fontawesome.dashgame.com/</a><br>定制自已的字体图标库<br><a href="http://iconfont.cn/" target="_blank" rel="noopener">http://iconfont.cn/</a><br><a href="https://icomoon.io/" target="_blank" rel="noopener">https://icomoon.io/</a><br>SVG<br><a href="http://www.iconsvg.com/" target="_blank" rel="noopener">http://www.iconsvg.com/</a></p>
+<h1 id="第5章兼容性"><a href="#第5章兼容性" class="headerlink" title="第5章兼容性"></a>第5章兼容性</h1><p>通过<a href="http://caniuse.com/" target="_blank" rel="noopener">http://caniuse.com/</a> 可查询CSS3各特性的支持程度，一般兼容性处理的常见方法是为属性添加私有前缀，如不能解决，应避免使用，无需刻意去处理CSS3的兼容性问题。</p>
+<h1 id="第6章高级应用"><a href="#第6章高级应用" class="headerlink" title="第6章高级应用"></a>第6章高级应用</h1>
+      
+    </div>
+    
+    
+    
+     <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2016/04/25/CSS3基础笔记/">CSS3基础笔记</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Bean 的个人博客">Bean</a></p>
+  <p><span>发布时间:</span>2016年04月25日 - 20:04</p>
+  <p><span>最后更新:</span>2018年04月28日 - 05:04</p>
+  <p><span>原始链接:</span><a href="/2016/04/25/CSS3基础笔记/" title="CSS3基础笔记">http://www.wangbin26.com/2016/04/25/CSS3基础笔记/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wangbin26.com/2016/04/25/CSS3基础笔记/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+    </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>谢谢您的支持鼓励!</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatreward.png" alt="Bean 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipayreward.png" alt="Bean 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+    
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS3/" rel="tag"><i class="fa fa-tag"></i> CSS3</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/20/HTML5触摸事件/" rel="next" title="HTML5触摸事件">
+                <i class="fa fa-chevron-left"></i> HTML5触摸事件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/06/HTTP协议/" rel="prev" title="HTTP协议">
+                HTTP协议 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjAxOS8xMjU1NQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://img1.2345.com/duoteimg/qqTxImg/2013/12/ns/29-020632_476.jpg"
+                alt="Bean" />
+            
+              <p class="site-author-name" itemprop="name">Bean</p>
+              <p class="site-description motion-element" itemprop="description">Age is a very high price to pay for maturity.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Bean26/Bean26.github.io" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1013730580@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-globe"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://588ku.com/" title="千库网" target="_blank">千库网</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.iconfont.cn/" title="阿里巴巴矢量图标库" target="_blank">阿里巴巴矢量图标库</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.easyicon.net/" title="EasyIcon" target="_blank">EasyIcon</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第1章CSS3简介"><span class="nav-number">1.</span> <span class="nav-text">第1章CSS3简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-CSS3的现状"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 CSS3的现状</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-如何对待"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 如何对待</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第2章准备工作"><span class="nav-number">2.</span> <span class="nav-text">第2章准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1统一环境"><span class="nav-number">2.1.</span> <span class="nav-text">2.1统一环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2如何使用手册"><span class="nav-number">2.2.</span> <span class="nav-text">2.2如何使用手册</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第3章基础知识"><span class="nav-number">3.</span> <span class="nav-text">第3章基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1选择器"><span class="nav-number">3.1.</span> <span class="nav-text">3.1选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-1属性选择器"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2伪类选择器"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2颜色"><span class="nav-number">3.2.</span> <span class="nav-text">3.2颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3文本"><span class="nav-number">3.3.</span> <span class="nav-text">3.3文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4边框"><span class="nav-number">3.4.</span> <span class="nav-text">3.4边框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-1边框圆角"><span class="nav-number">3.4.1.</span> <span class="nav-text">3.4.1边框圆角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-2边框图片"><span class="nav-number">3.4.2.</span> <span class="nav-text">3.4.2边框图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-3边框阴影"><span class="nav-number">3.4.3.</span> <span class="nav-text">3.4.3边框阴影</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5盒模型"><span class="nav-number">3.5.</span> <span class="nav-text">3.5盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6背景"><span class="nav-number">3.6.</span> <span class="nav-text">3.6背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7渐变"><span class="nav-number">3.7.</span> <span class="nav-text">3.7渐变</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-8伸缩布局"><span class="nav-number">3.8.</span> <span class="nav-text">3.8伸缩布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-8-1新版伸缩布局"><span class="nav-number">3.9.</span> <span class="nav-text">3.8.1新版伸缩布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-9多列布局"><span class="nav-number">3.10.</span> <span class="nav-text">3.9多列布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-10过渡"><span class="nav-number">3.11.</span> <span class="nav-text">3.10过渡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-11动画"><span class="nav-number">3.12.</span> <span class="nav-text">3.11动画</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-12转换"><span class="nav-number">3.13.</span> <span class="nav-text">3.12转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-13媒体查询"><span class="nav-number">3.14.</span> <span class="nav-text">3.13媒体查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1字体格式"><span class="nav-number">3.15.</span> <span class="nav-text">4.1字体格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2字体图标"><span class="nav-number">3.16.</span> <span class="nav-text">4.2字体图标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第5章兼容性"><span class="nav-number">4.</span> <span class="nav-text">第5章兼容性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第6章高级应用"><span class="nav-number">5.</span> <span class="nav-text">第6章高级应用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bean</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">本站总字数&#58;</span>
+    
+    <span title="本站总字数">36.6k</span>
+  
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访问用户:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<div class="powered-by"><span> | </span></div>
+<div class="powered-by">
+<i class="fa fa-eye"></i><span id="busuanzi_container_site_pv">
+  本站访问量:<span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<script type="text/javascript" src="js/src/love.js"></script>
