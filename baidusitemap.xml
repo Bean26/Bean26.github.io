@@ -4,24 +4,19 @@
 
     
   <url>
-    <loc>http://www.wangbin26.com/2018/05/08/%E7%BA%A6%E7%BF%B0%E5%86%85%E6%96%AF%E5%A0%A1(%E4%B8%80)/</loc>
-    <lastmod>2018-05-08T05:46:18.067Z</lastmod>
+    <loc>http://www.wangbin26.com/2016/06/04/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-05-08T06:13:54.517Z</lastmod>
     <data>
         <display>
-        <title>约翰内斯堡（一）</title>
-        <pubTime>2018-05-08T05:00:38.000Z</pubTime>
+        <title>移动web开发基础</title>
+        <pubTime>2016-06-04T07:06:32.000Z</pubTime>
         
-        <tag>约翰内斯堡</tag>
-         
-        <tag>印象南非</tag>
+        <tag>移动web开发</tag>
          
          
            
              
-              <breadCrumb title="游记" url="http://www.wangbin26.com/categories/%E6%B8%B8%E8%AE%B0/"/>
-          
-             
-              <breadCrumb title="文学" url="http://www.wangbin26.com/categories/%E6%B8%B8%E8%AE%B0/%E6%96%87%E5%AD%A6/"/>
+              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -236,26 +231,6 @@
         <pubTime>2016-03-09T07:45:40.000Z</pubTime>
         
         <tag>HTML5</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端技术" url="http://www.wangbin26.com/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.wangbin26.com/2016/06/04/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2018-04-25T15:36:06.726Z</lastmod>
-    <data>
-        <display>
-        <title>移动web开发基础</title>
-        <pubTime>2016-06-04T07:06:32.000Z</pubTime>
-        
-        <tag>移动web开发</tag>
          
          
            
